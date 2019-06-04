@@ -1,0 +1,37 @@
+{
+  "checksum": "5d114facdac0265ba6c4f89dd8177153",
+  "root": "esy-x264-snapshot-20190603-2245-stable@link-dev:./package.json",
+  "node": {
+    "esy-x264-snapshot-20190603-2245-stable@link-dev:./package.json": {
+      "id": "esy-x264-snapshot-20190603-2245-stable@link-dev:./package.json",
+      "name": "esy-x264-snapshot-20190603-2245-stable",
+      "version": "link-dev:./package.json",
+      "source": {
+        "type": "link-dev",
+        "path": ".",
+        "manifest": "package.json"
+      },
+      "overrides": [],
+      "dependencies": [
+        "esy-nasm@github:prometheansacrifice/esy-nasm#6240bdbb164476558d3738812fbbe48f66cc904a@d41d8cd9"
+      ],
+      "devDependencies": []
+    },
+    "esy-nasm@github:prometheansacrifice/esy-nasm#6240bdbb164476558d3738812fbbe48f66cc904a@d41d8cd9": {
+      "id":
+        "esy-nasm@github:prometheansacrifice/esy-nasm#6240bdbb164476558d3738812fbbe48f66cc904a@d41d8cd9",
+      "name": "esy-nasm",
+      "version":
+        "github:prometheansacrifice/esy-nasm#6240bdbb164476558d3738812fbbe48f66cc904a",
+      "source": {
+        "type": "install",
+        "source": [
+          "github:prometheansacrifice/esy-nasm#6240bdbb164476558d3738812fbbe48f66cc904a"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    }
+  }
+}

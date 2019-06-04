@@ -1,0 +1,33 @@
+{
+  "name": "esy-x264-snapshot-20190603-2245-stable",
+  "version": "0.0.000",
+  "description": "x264-snapshot-20190603-2245-stable packaged for esy",
+  "esy": {
+    "buildsInSource": true,
+    "exportedEnv": {
+      "PKG_CONFIG_PATH": {
+        "scope": "global",
+        "val": "#{self.lib / 'pkgconfig' :  }"
+      }
+    },
+    "build": [
+      [
+        "chmod",
+        "755",
+        "./configure"
+      ],
+      "./configure --enable-shared --prefix=$cur__install #{os == 'windows' ? '--host x86_64-w64-mingw32' : ''}",
+      [
+        "make"
+      ],
+      [
+        "make",
+        "install"
+      ]
+    ]
+  },
+  "dependencies": {
+    "esy-nasm": "prometheansacrifice/esy-nasm#6240bdbb164476558d3738812fbbe48f66cc904a"
+  },
+  "resolutions": {}
+}
